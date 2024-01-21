@@ -254,7 +254,7 @@ def create_model():
 This code should preferably be run on Google Colab TPU runtime.
 With Colab TPUs, each epoch will take 5-6 minutes.
 """
-use_tpu = True
+use_tpu = False
 if use_tpu:
     # Create distribution strategy
     tpu = tf.distribute.cluster_resolver.TPUClusterResolver.connect()
